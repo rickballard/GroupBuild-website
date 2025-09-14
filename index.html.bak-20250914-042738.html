@@ -1,38 +1,6 @@
 ﻿<!doctype html>
 <html lang="en"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- POLISH: start -->
-<style>
-:root{
-  --bg:#ffffff; --ink:#0c0c18; --muted:#6d7182; --line:#eaeaf0;
-  --brand:#0b5bd3; --brand-2:#2dd4bf;
-  --radius:14px; --radius-lg:22px; --space: clamp(14px,1.8vw,20px);
-}
-@media (prefers-color-scheme: dark){
-  :root{ --bg:#0b0d12; --ink:#eef0f3; --muted:#9aa2b2; --line:#1f2430 }
-  body{ background:var(--bg); color:var(--ink);}
-}
-body{background:var(--bg);color:var(--ink);line-height:1.65;
-     font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Noto Sans",sans-serif}
-.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
-h1,h2{line-height:1.2} h2{margin:40px 0 12px} .muted{color:var(--muted)}
-.grid{display:grid;gap:var(--space);grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{border:1px solid var(--line);border-radius:var(--radius);padding:16px;background:#fff}
-.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
-  background: radial-gradient(1200px 600px at 10% -10%, rgba(11,91,211,.12), transparent 60%),
-              linear-gradient(180deg, rgba(45,212,191,.08), transparent 40%);}
-.hero .wrap{display:flex;gap:24px;align-items:center;min-height:180px;padding:28px 16px}
-.badge{display:inline-block;font-weight:600;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:#fff}
-.btn{display:inline-block;padding:12px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:inherit;background:#fff}
-.btn.primary{background:var(--brand);color:#fff;border-color:transparent}
-.btn:hover{filter:brightness(.97)}
-#modules .card{background:linear-gradient(180deg,#ffffff,#fafbff);border-color:#e6e9f7}
-footer{margin:56px 0 40px;color:var(--muted);text-align:center}
-</style>
-<meta property="og:image" content="/assets/og/og.svg">
-<meta property="twitter:image" content="/assets/og/og.svg">
-<meta name="twitter:card" content="summary_large_image">
-<!-- POLISH: end -->
 <title>GroupBuild — Draft α</title>
 <style>
 :root{--w:980px}
@@ -75,19 +43,6 @@ footer{margin:56px 0 40px;color:#666;text-align:center}
     </nav>
   </div>
 </header>
-<section class="hero" id="hero">
-  <div class="wrap">
-    <div>
-      <div class="badge">Alpha is forming</div>
-      <h1 style="margin:10px 0 6px">GroupBuild — We the people, empowered</h1>
-      <p class="muted" style="max-width:60ch">Pseudonymous trust, weighted signal, and civic action loops for aligned communities.</p>
-      <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
-        <a class="btn primary" href="#modules">Explore modules</a>
-        <a class="btn" href="#alpha">Join the alpha</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <main>
   <section class="hero">
@@ -160,16 +115,6 @@ footer{margin:56px 0 40px;color:#666;text-align:center}
   </section>
 </main>
 
-<footer>© GroupBuild<section class="wrap" id="alpha" style="margin-top:30px">
-  <div class="card" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-    <strong>Alpha is forming.</strong>
-    <form action="YOUR_EMAIL_FORM_ACTION" method="post" style="display:flex;gap:8px;flex-wrap:wrap;margin-left:auto">
-      <input type="email" required placeholder="Email" name="email" style="padding:10px 12px;border:1px solid var(--line);border-radius:12px;min-width:240px">
-      <button class="btn primary" type="submit">Get updates</button>
-    </form>
-  </div>
-</section>
-</footer>
+<footer>© GroupBuild</footer>
 </html>
-
 
