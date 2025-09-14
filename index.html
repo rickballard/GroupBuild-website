@@ -5,7 +5,7 @@
 <style>
 :root{--w:980px}
 *{box-sizing:border-box}
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;margin:0;color:#101010;line-height:1.6}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;margin:0;color:#101010;line-height:1.65}
 .banner{background:#fff3cd;border-bottom:1px solid #f0d98d;padding:10px 16px;text-align:center;font-weight:600}
 header{padding:26px 16px;border-bottom:1px solid #eee;background:#fafafa}
 .wrap{max-width:var(--w);margin:0 auto;display:flex;gap:18px;align-items:center;justify-content:space-between}
@@ -22,6 +22,10 @@ main{max-width:var(--w);margin:28px auto;padding:0 16px}
 section{margin:40px 0}
 .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .card{border:1px solid #eee;border-radius:14px;padding:14px;background:#fff}
+.team{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.person{display:flex;gap:14px;border:1px solid #eee;border-radius:14px;padding:14px;background:#fff}
+.person img{width:64px;height:64px;border-radius:12px;border:1px solid #ddd;background:#fff}
+.small{color:#666}
 code{background:#f6f8fa;border:1px solid #eee;border-radius:8px;padding:2px 6px}
 footer{margin:56px 0 40px;color:#666;text-align:center}
 </style>
@@ -33,8 +37,9 @@ footer{margin:56px 0 40px;color:#666;text-align:center}
     <nav>
       <a href="#what">What</a>
       <a href="#demo">Demo</a>
+      <a href="#team">Team</a>
       <a href="#roadmap">Roadmap</a>
-      <a href="#about">Team</a>
+      <a href="#transparency">Transparency</a>
     </nav>
   </div>
 </header>
@@ -63,7 +68,35 @@ footer{margin:56px 0 40px;color:#666;text-align:center}
     <h2>Current demo</h2>
     <p>We’re preparing a public demo endpoint. Until then, hop into Discord and we’ll add you to the test group.</p>
     <p><a class="btn" href="YOUR_DISCORD_INVITE_URL" target="_blank" rel="noopener">Join Discord</a></p>
-    <p><small>If Elias has a proof-of-concept endpoint up, we’ll pin it in <code>#announcements</code> and link it here.</small></p>
+    <p class="small">If Anolias has a proof-of-concept endpoint up, we’ll pin it in <code>#announcements</code> and link it here.</p>
+  </section>
+
+  <section id="team">
+    <h2>Team</h2>
+    <div class="team">
+      <div class="person">
+        <img alt="Hardball avatar" src="assets/kittens/aggressive.svg">
+        <div>
+          <h3 style="margin:0 0 6px 0;">Hardball — Co-Founder, GTM & Civic-Tech</h3>
+          <p>Civic-tech strategist and builder of startup-scale and billion-scale ventures. Focused on governance patterns, congruence scaffolding, and human+AI co-workflows.</p>
+          <p class="small">Bio (longer) → <a href="https://github.com/rickballard/CoCivium/blob/main/docs/public-profile.md" target="_blank" rel="noopener">CoCivium/public-profile.md</a></p>
+        </div>
+      </div>
+      <div class="person">
+        <img alt="Anolias avatar" src="assets/kittens/empathic.svg">
+        <div>
+          <h3 style="margin:0 0 6px 0;">Anolias — Co-Founder, CTO</h3>
+          <p>Systems engineer turned distributed-infra architect. Toolbelt: Python • Node • Postgres/asyncpg • Docker • CI/CD • DigitalOcean • API design • auth • security-hardening. Believes in privacy, pseudonymity, and resistance to coercion.</p>
+          <details><summary><strong>Q&A (work in progress)</strong></summary>
+            <ul>
+              <li><em>How will the demo scale under real protest conditions?</em> — (WIP · Anolias)</li>
+              <li><em>Speed vs privacy tradeoffs in Alpha?</em> — (WIP · Anolias)</li>
+              <li><em>Which APIs are core vs optional?</em> — (WIP · Anolias)</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="roadmap">
@@ -76,14 +109,9 @@ footer{margin:56px 0 40px;color:#666;text-align:center}
     </ul>
   </section>
 
-  <section id="about">
-    <h2>Team</h2>
-    <p>Built by Rick (vibecoder, GTM) and Elias (traditional coder). We meet in the middle to ship speed and quality.</p>
-  </section>
-
-  <section>
+  <section id="transparency">
     <h2>Transparency</h2>
-    <p>Canonical bio → <a href="https://github.com/rickballard/CoCivium/blob/main/docs/public-profile.md" target="_blank" rel="noopener">CoCivium/docs/public-profile.md</a></p>
+    <p>We value privacy and identity freedom. We also value clarity. Canonical philosophy & bio → <a href="https://github.com/rickballard/CoCivium/blob/main/docs/public-profile.md" target="_blank" rel="noopener">CoCivium/docs/public-profile.md</a>.</p>
   </section>
 </main>
 
