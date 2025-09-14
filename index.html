@@ -1,28 +1,44 @@
 ﻿<!doctype html>
 <html lang="en"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GroupBuild — Build Better, Together</title>
+<title>GroupBuild — Draft α</title>
 <style>
-  :root{--w:1000px}
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;margin:0;color:#111;line-height:1.6}
-  header{padding:28px 16px;border-bottom:1px solid #eee;background:#fafafa}
-  .wrap{max-width:var(--w);margin:0 auto;display:flex;gap:28px;align-items:center}
-  h1{margin:0;font-size:clamp(28px,3vw,40px)}
-  main{max-width:var(--w);margin:32px auto;padding:0 16px}
-  .hero{display:grid;gap:16px}
-  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-  .btn{padding:12px 16px;border:1px solid #ddd;border-radius:12px;text-decoration:none;color:inherit}
-  .btn:hover{background:#f5f5f5}
-  .pill{font-size:12px;border-radius:999px;padding:4px 10px;border:1px solid #ddd;background:#fff}
-  section{margin:40px 0}
-  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-  footer{margin:56px 0 40px;color:#666;text-align:center}
-  code{background:#f6f8fa;border:1px solid #eee;border-radius:8px;padding:2px 6px}
+:root{--w:980px}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;margin:0;color:#101010;line-height:1.6}
+.banner{background:#fff3cd;border-bottom:1px solid #f0d98d;padding:10px 16px;text-align:center;font-weight:600}
+header{padding:26px 16px;border-bottom:1px solid #eee;background:#fafafa}
+.wrap{max-width:var(--w);margin:0 auto;display:flex;gap:18px;align-items:center;justify-content:space-between}
+.logo{display:flex;gap:10px;align-items:center}
+.logo h1{margin:0;font-size:clamp(26px,3.2vw,40px)}
+.pill{font-size:12px;border-radius:999px;padding:4px 10px;border:1px solid #ddd;background:#fff}
+nav a{margin-left:12px;color:inherit;text-decoration:none}
+nav a:hover{text-decoration:underline}
+main{max-width:var(--w);margin:28px auto;padding:0 16px}
+.hero{display:grid;gap:14px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 16px;border:1px solid #ddd;border-radius:12px;text-decoration:none;color:inherit;background:#fff}
+.btn:hover{background:#f5f5f5}
+section{margin:40px 0}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{border:1px solid #eee;border-radius:14px;padding:14px;background:#fff}
+code{background:#f6f8fa;border:1px solid #eee;border-radius:8px;padding:2px 6px}
+footer{margin:56px 0 40px;color:#666;text-align:center}
 </style>
-<header><div class="wrap">
-  <h1>GroupBuild</h1>
-  <span class="pill">Alpha</span>
-</div></header>
+
+<div class="banner">Draft · Work in progress · Private alpha</div>
+<header>
+  <div class="wrap">
+    <div class="logo"><h1>GroupBuild</h1><span class="pill">Alpha</span></div>
+    <nav>
+      <a href="#what">What</a>
+      <a href="#demo">Demo</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#about">Team</a>
+    </nav>
+  </div>
+</header>
+
 <main>
   <section class="hero">
     <p><strong>Build better, together.</strong> GroupBuild coordinates contributors, feedback, and releases across vibecoders and traditional coders — without burying you in ticket hell.</p>
@@ -32,21 +48,24 @@
       <a class="btn" href="#demo">See what’s shipping</a>
     </div>
   </section>
+
   <section id="what">
     <h2>What it is</h2>
     <div class="grid">
-      <div><h3>Source of truth</h3><p>Plan, ship, and review in one place. Keep signal high, noise low.</p></div>
-      <div><h3>Mixed workflows</h3><p>Works for <em>vibecoders</em> and <em>traditional coders</em>. AI-assisted briefs + human PRs.</p></div>
-      <div><h3>Fast demoing</h3><p>Point testers at live builds in seconds. No server acrobatics required.</p></div>
-      <div><h3>Sales/Marketing ready</h3><p>Capture waitlists, run cohorts, gather user notes that become backlog items.</p></div>
+      <div class="card"><h3>Source of truth</h3><p>Plan, ship, and review in one place. Keep signal high, noise low.</p></div>
+      <div class="card"><h3>Mixed workflows</h3><p>Works for <em>vibecoders</em> and <em>traditional coders</em>. AI-assisted briefs + human PRs.</p></div>
+      <div class="card"><h3>Fast demoing</h3><p>Point testers at live builds in seconds. No server acrobatics required.</p></div>
+      <div class="card"><h3>GTM-ready</h3><p>Capture waitlists, run cohorts, gather user notes that become backlog items.</p></div>
     </div>
   </section>
+
   <section id="demo">
     <h2>Current demo</h2>
     <p>We’re preparing a public demo endpoint. Until then, hop into Discord and we’ll add you to the test group.</p>
     <p><a class="btn" href="YOUR_DISCORD_INVITE_URL" target="_blank" rel="noopener">Join Discord</a></p>
     <p><small>If Elias has a proof-of-concept endpoint up, we’ll pin it in <code>#announcements</code> and link it here.</small></p>
   </section>
+
   <section id="roadmap">
     <h2>Near-term roadmap</h2>
     <ul>
@@ -56,10 +75,17 @@
       <li>Pricing experiment (later)</li>
     </ul>
   </section>
+
   <section id="about">
     <h2>Team</h2>
     <p>Built by Rick (vibecoder, GTM) and Elias (traditional coder). We meet in the middle to ship speed and quality.</p>
   </section>
+
+  <section>
+    <h2>Transparency</h2>
+    <p>Canonical bio → <a href="https://github.com/rickballard/CoCivium/blob/main/docs/public-profile.md" target="_blank" rel="noopener">CoCivium/docs/public-profile.md</a></p>
+  </section>
 </main>
+
 <footer>© GroupBuild</footer>
 </html>
