@@ -1,0 +1,14 @@
+# menus.yaml (example)
+top:
+  - { title: "How it works", url: "/how-it-works/" }
+  - { title: "Resources", url: "/resources/" }
+  - { title: "Contribute", url: "/contribute/" }
+  - { title: "Roadmap", url: "/roadmap/" }
+  - { title: "Donate", url: "/donate/" }
+secondary:
+  - { title: "Demo (Sandbox)", url: "/demo/" }
+  - { title: "Privacy & Safety", url: "/privacy-safety/" }
+footer:
+  - { title: "GitHub", url: "https://github.com/rickballard/GroupBuild-website" }
+  - { title: "Discord", url: "#" }
+  - { title: "Contact", url: "mailto:info@groupbuild.org" }

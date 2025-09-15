@@ -1,0 +1,12 @@
+# Issues Checklist (copy/paste into GitHub Issues)
+- [ ] Create `_data/menus.yaml` and wire top/secondary/footer menus.
+- [ ] Build `index.md` with Hero + 3 value blocks + proof snippets + CTAs.
+- [ ] Add `/how-it-works/` with 5-step flow and diagrams (placeholder).
+- [ ] Add `/resources/` with safety kit, event types, checklists, templates.
+- [ ] Add `/demo/` sandbox shell with warning banner + ScriptTag stub.
+- [ ] Add `/contribute/` starter guide + issue labels section.
+- [ ] Add `/roadmap/` with MVP/V2/V3 tables.
+- [ ] Add `/privacy-safety/` policy & field safety basics.
+- [ ] Add donation slider placeholder + ledger page stub.
+- [ ] Link check CI; alt text linter reminder.
+- [ ] CNAME & Pages config; 404 page with helpful links.
